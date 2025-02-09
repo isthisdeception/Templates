@@ -12,7 +12,7 @@ int sub(int x, int y) {
 }
 
 int mul(int x, int y) {
-    return ((x % mod) * (y % mod)) % mod;
+    return (1LL * (x % mod) * (y % mod)) % mod;
 }
 
 int power(int x, int y) {
