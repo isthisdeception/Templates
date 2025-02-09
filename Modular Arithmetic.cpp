@@ -8,7 +8,7 @@ int add(int x, int y) {
 }
 
 int sub(int x, int y) {
-    return ((x % mod) - (x % mod) + mod) % mod;
+    return ((x % mod) - (y % mod) + mod) % mod;
 }
 
 int mul(int x, int y) {
