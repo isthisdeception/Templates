@@ -1,12 +1,18 @@
 #include <bits/stdc++.h> 
 using namespace std;
-#define dbg(a) cout << #a << " = " << a << '\n';
+#define int long long
 
-void solve() { 
+#ifndef ONLINE_JUDGE
+#include "debug.h"
+#else
+#define dbg(...)
+#endif
+ 
+void solve() {
     
 }
 
-int main() { 
+int32_t main() { 
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
