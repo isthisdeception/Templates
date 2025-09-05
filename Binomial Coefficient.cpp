@@ -4,16 +4,20 @@ using namespace std;
 const int N = 1e6 + 9, mod = 1e9 + 7;
 int fact[N], ifact[N];
 
-int power(int a, int b) {
-	if (b == 0) return 1;
-	int res = power(a, b / 2);
-	res = 1LL * res * res % mod;
-	if (b % 2 == 1) res = 1LL * res * a % mod;
-	return res;
+int binpow(int a, int b) {
+    int res = 1 % mod;
+    while (b > 0) {
+        if (b & 1) {
+            res = a * res % mod;
+        }
+        a = a * a % mod;
+        b >>= 1;
+    }
+    return res;
 }
 
 int inverse(int n) {
-	return power(n, mod - 2);
+	return binpow(n, mod - 2);
 }
 
 void prec() {
