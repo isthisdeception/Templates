@@ -5,8 +5,10 @@ using namespace __gnu_pbds;
 
 template <class T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-// find_by_order(k)  returns iterator to k-th element starting from 0;
-// order_of_key(k) returns count of elements strictly smaller than k;
+// s.insert(x) → insert element x.
+// s.erase(x) → erase element x.
+// *s.find_by_order(k) → k-th smallest element (0-indexed).
+// s.order_of_key(x) → number of elements strictly smaller than x.
 // to make descending, greater<T>
 
-ordered_set<pair<int, int>> st; // for multiset use pair
+ordered_set<pair<int, int>> s; // for multiset use pair
