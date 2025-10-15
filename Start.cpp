@@ -9,7 +9,7 @@ using namespace std;
 #endif
  
 void solve() {
-    
+   // write from here 
 }
 
 int32_t main() { 
